@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: rgb(19, 162, 138);
+	--secondary-color: #ada9a993;
+	--background-color: lightgrey;
+}
+html,
+body {
+	line-height: 1.4rem;
+	background-color: var(--background-color);
+	scroll-behavior: smooth;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Navbar */
+.navbar-container {
+	width: 100%;
+	background-color: burlywood;
+	position: fixed;
+	transition: all ease-in 3s;
+}
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+	transform: scaleX(1);
+	opacity: 1;
+	transition: 3s ease-in;
+}
+.navbar a {
+	padding: 0 15px;
+	font-size: 25px;
+	font-weight: 700;
+	color: black;
+}
+.navbar a:hover {
+	color: red;
+}
+.navbar i {
+	display: block;
+	margin-top: 10px;
+}
+
+/* Hero section */
+.hero {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+}
+.hero-container {
+	height: 75%;
+	margin-top: 200px;
+}
+.hero img {
+	height: 250px;
+	width: 250px;
+	border-radius: 120px;
+}
+
+.hero-container h1 {
+	margin: 20px;
+	font-size: 40px;
+}
+.hero-container h3 {
+	margin: 20px;
+	font-size: 25px;
+}
+
+/* Keyframes */
+img {
+	animation-duration: 2.5s;
+	animation-name: drop-in;
+}
+h1 {
+	animation-duration: 4s;
+	animation-name: slide-out;
+}
+h3 {
+	animation-duration: 5s;
+	animation-name: slide-in;
+}
+
+@keyframes drop-in {
+	from {
+		translate: -150vw -150vw;
+		scale: 200% 1;
+	}
+
+	to {
+		translate: 0 0;
+		scale: 100% 1;
+	}
+}
+
+@keyframes slide-out {
+	from {
+		translate: 150vw 0;
+		scale: 200% 1;
+	}
+
+	to {
+		translate: 0 0;
+		scale: 100% 1;
+	}
+}
+
+@keyframes slide-in {
+	from {
+		translate: -150vw 0;
+		scale: -200% 1;
+	}
+
+	to {
+		translate: 0 0;
+		scale: 100% 1;
+	}
+}
