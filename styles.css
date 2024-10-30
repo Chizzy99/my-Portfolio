@@ -14,12 +14,9 @@ body {
 	line-height: 1.4rem;
 	background-color: var(--background-color);
 	font-family: 'Times New Roman', Times, serif;
+	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
-	background-image: url(./images/cool-background.png);
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
 }
 
 ul {
@@ -34,15 +31,19 @@ a {
 /* Navbar */
 .navbar-container {
 	width: 100%;
-	background: transparent;
+	/* background: transparent; */
 	position: fixed;
-	opacity: 0.8;
-	transition: all ease-in 4s;
+	z-index: 1000;
+	transition: all ease-in-out 0.3s;
 }
 .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.navbar-scroll {
+	background: rgb(55, 158, 169);
+	backdrop-filter: blur(10px);
 }
 
 .navbar ul {
@@ -79,6 +80,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	align-self: center;
+	background-image: url(./images/cool-background.png);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
 }
 .hero-container {
 	height: 75%;
@@ -115,6 +120,12 @@ a {
 	color: var(--background-color);
 	text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.179);
 	font-weight: bold;
+}
+
+/* Projects section */
+.projects-container {
+	height: 100vh;
+	width: 100%;
 }
 
 /* Keyframes */
