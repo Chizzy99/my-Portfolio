@@ -19,7 +19,8 @@ document.querySelectorAll('.scroll-btn').forEach((button) => {
 		if (targetElement) {
 			targetElement.scrollIntoView({ behavior: 'smooth' });
 		} else {
-			window.location.href = `index.html#${targetId}`;
+			window.location.href = `about-section#${targetId}`;
 		}
 	});
 });
+// * icons animation
