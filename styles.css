@@ -152,6 +152,17 @@ a {
 	width: 10%;
 }
 
+.contact-container {
+	height: 100vh;
+	width: 100%;
+}
+
+.contact-container h1 {
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+}
+
 /* Keyframes */
 img {
 	animation-duration: 3s;
